@@ -32,7 +32,7 @@
       <img src={logo} class="mr-3 h-6 sm:h-9" alt="fcs Logo" />
       <span
         class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-        >F.C. Sportfreunde München</span
+        >FC Sportfreunde München</span
       >
     </NavBrand>
     <NavHamburger on:click={toggle} />

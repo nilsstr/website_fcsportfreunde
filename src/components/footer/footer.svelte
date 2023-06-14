@@ -3,5 +3,5 @@
   </script>
   
   <Footer footerType="logo">
-    <FooterCopyright href="/" by="F.C. Sportfreunde München" />
+    <FooterCopyright href="/" by="FC Sportfreunde München" />
   </Footer>

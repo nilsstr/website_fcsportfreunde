@@ -8,7 +8,7 @@
     <Navigationbar />
     <div class = 'header'>
         <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Aktuelles vom F.C. S.</Heading
+            >Aktuelles vom FC S.</Heading
         >
 
         <P class="my-4 text-gray-500">

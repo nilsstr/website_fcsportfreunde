@@ -17,7 +17,7 @@
                     class={headingClass}
                     customSize="text-3xl font-extrabold md:text-4xl lg:text-6xl"
                 >
-                    Willkommen beim F.C. Sportfreunde München!
+                    Willkommen beim FC Sportfreunde München!
                 </Heading>
             </div>
             <div class="container-ball">
