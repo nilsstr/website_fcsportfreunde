@@ -38,6 +38,7 @@
     <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
       <NavLi href="/" active={true}>Startseite</NavLi>
+      <NavLi href="/verein">Verein</NavLi>
       <NavLi href="/aktuelles">Aktuelles</NavLi>
       <NavLi href="/spiele">Spiele</NavLi>
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>

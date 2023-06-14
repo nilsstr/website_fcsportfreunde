@@ -1,131 +1,59 @@
 <script>
     import Navigationbar from "../components/navbar/navbar.svelte";
-    import { Card, Heading } from "flowbite-svelte";
+    import { Heading } from "flowbite-svelte";
     import Footer from "../components/footer/footer.svelte";
-    import andi from "$lib/andi.png";
-    import leon from "$lib/leon.png";
-    import yannick from "$lib/yannick.png";
-    import herlin from "$lib/herlin.png";
-    import lucas from "$lib/lucas.png";
-    import nils from "$lib/nils.png";
-    // Array of card data
-    let VorstandData = [
-        {
-            image: herlin,
-            title: "1. Vorstand",
-            description: "Herrlin Markja (Präsi)",
-        },
-        // Add more card objects here if needed
-    ];
+    import Soccerball from "$lib/soccer_ball.png";
 
-    let MitgliederData = [
-        {
-            image: andi,
-            title: "Flottenmanager",
-            description: "Andreas Dimperl",
-        },
-        {
-            image: lucas,
-            title: "Getränkewart",
-            description: "Lucas Zölch (Hoibe)",
-        },
-        {
-            image: leon,
-            title: "Gleichstellungsbeauftragter",
-            description: "Leon Hohmann",
-        },
-        {
-            image: yannick,
-            title: "Klimaaktivist",
-            description: "Yannick Littek",
-        },
-        {
-            image: nils,
-            title: "Facilty Manager",
-            description: "Nils Strickmann",
-        },
-        // Add more card objects here if needed
-    ];
+    let headingClass = "mb-4 text-white";
 </script>
 
 <main>
     <Navigationbar />
-    <div class="home">
-        <div class="card-container">
-            <div class="heading-title">
-                <Heading tag="h3" customSize="text-4xl font-extrabold "
-                    >Vereinsführung</Heading
+    <div class="landing">
+        <div class="red-box">
+            <div class="text-box">
+                <Heading
+                    tag="h1"
+                    class={headingClass}
+                    customSize="text-3xl font-extrabold md:text-4xl lg:text-6xl"
                 >
+                    Willkommen beim F.C. Sportfreunde München!
+                </Heading>
             </div>
-            {#each VorstandData as card}
-            <div class="card-margin">
-                <Card
-                    {card}
-                    horizontal
-                    img={card.image}
-                    style="width: 600px; height: 200px;"
-                >
-                    <!-- svelte-ignore a11y-img-redundant-alt -->
-                    <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                    >
-                        {card.description}
-                    </h5>
-                    <p
-                        class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
-                    >
-                        {card.title}
-                    </p>
-                </Card>
+            <div class="container-ball">
+                <img src={Soccerball} class="ball"  alt="ball"/>
             </div>
-            {/each}
         </div>
-        <div class="card-container">
-            <div class="heading-title">
-                <Heading tag="h3" customSize="text-4xl font-extrabold "
-                    >Weitere Ämter</Heading
-                >
-            </div>
-            {#each MitgliederData as card}
-                <div class="card-margin">
-                <Card
-                    {card}
-                    horizontal
-                    img={card.image}
-                    style="width: 600px; height: 200px;"
-                >
-                    <!-- svelte-ignore a11y-img-redundant-alt -->
-                    <h5
-                        class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                    >
-                        {card.description}
-                    </h5>
-                    <p
-                        class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
-                    >
-                        {card.title}
-                    </p>
-                </Card>
-            </div>
-            {/each}
-        </div>
+        <Footer />
     </div>
-    <Footer />
 </main>
 
 <style>
-    .home {
+    .red-box {
+        background-color: red;
+        height: 700px; /* Adjust the height value as needed */
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: left;
     }
 
-    .card-container {
-        margin-top: 100px;
+    .white-text {
+        color: white;
+        font-size: 20px;
     }
-    .card-margin {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .text-box {
+        text-align: left;
+        margin-left: 40px;
+        width: 70%;
+    }
+    .ball {
+        align-items: right;
+        display: flex;
+        margin-top: 70px;
+    }
+    .container-ball{
+        align-items: right;
+        width: 100%;
+
     }
 </style>
