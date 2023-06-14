@@ -3,3 +3,5 @@
 src/lib/
 
 /.svelte-kit
+
+config.json
