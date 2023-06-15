@@ -1,38 +1,29 @@
-# create-svelte
+# Local DEV-Guid for FC Sportfreunde Webpage
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This guide will walk you through the steps to start a SvelteKit application locally on your machine. SvelteKit is a framework for building web applications using Svelte, a reactive JavaScript framework.
 
-## Creating a project
+## Prerequisites
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Node.js](https://nodejs.org/en/) (version 14 or newer)
+- npm (Node Package Manager) or yarn (preferred)
+
+
+To start a SvelteKit application locally, follow these steps:
+
+Open your preferred terminal or command prompt.
+
+Create a new directory for your project:
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+cd website
 
-# create a new project in my-app
-npm create svelte@latest my-app
+npm install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Start the application:
 
 ```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Open your browser and navigate to `localhost`.

@@ -9,6 +9,7 @@
     MegaMenu,
   } from "flowbite-svelte";
   import logo from "$lib/fcs.png";
+  import {page} from '$app/stores';
 
   let menu2 = [
     {
@@ -37,10 +38,10 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
-      <NavLi href="/" active={true}>Startseite</NavLi>
-      <NavLi href="/verein">Verein</NavLi>
-      <NavLi href="/aktuelles">Aktuelles</NavLi>
-      <NavLi href="/spiele">Spiele</NavLi>
+      <NavLi href="/" active={$page.url.pathname==='/'}>Startseite</NavLi>
+      <NavLi href="/verein" active={$page.url.pathname==='/verein'}>Verein</NavLi>
+      <NavLi href="/aktuelles" active={$page.url.pathname==='/aktuelles'}>Aktuelles</NavLi>
+      <NavLi href="/spiele" active={$page.url.pathname==='/spiele'}>Spiele</NavLi>
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
       <MegaMenu full items={menu2} let:item>
         <a
@@ -53,7 +54,7 @@
           >
         </a>
       </MegaMenu>
-      <NavLi href="/kontakt">Kontakt</NavLi>
+      <NavLi href="/kontakt" active={$page.url.pathname==='/kontakt'}>Kontakt</NavLi>
     </NavUl>
   </Navbar>
 </div>
