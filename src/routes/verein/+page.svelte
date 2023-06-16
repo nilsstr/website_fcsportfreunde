@@ -58,7 +58,7 @@
                         {card}
                         horizontal
                         img={card.image}
-                        style="width: 500px; height: 200px;"
+                        style="width: auto; height: auto;"
                     >
                         <!-- svelte-ignore a11y-img-redundant-alt -->
                         <h5

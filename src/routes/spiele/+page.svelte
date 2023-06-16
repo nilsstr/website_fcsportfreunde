@@ -5,6 +5,7 @@
   import { onMount } from 'svelte';
   import config from './config.json'; 
 
+
   let widgetOptions = {
     height: '500',
     width: '1100',
@@ -64,12 +65,10 @@
     width: 80%; /* Adjust the width value as needed */
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    display: grid;
   }
-
   .spiel-tabelle{
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    margin-top: 20px;
   }
 </style>

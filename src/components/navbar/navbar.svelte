@@ -9,7 +9,7 @@
     MegaMenu,
   } from "flowbite-svelte";
   import logo from "$lib/fcs.png";
-  import {page} from '$app/stores';
+  import { page } from "$app/stores";
 
   let menu2 = [
     {
@@ -19,9 +19,17 @@
     {
       name: "Herren II",
       help: "Trainer: Max Mustermann",
-    }
+    },
   ];
 </script>
+
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/mono-icons@1.0.5/iconfont/icons.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</svelte:head>
 
 <div class="relative px-8">
   <Navbar
@@ -38,10 +46,16 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
-      <NavLi href="/" active={$page.url.pathname==='/'}>Startseite</NavLi>
-      <NavLi href="/verein" active={$page.url.pathname==='/verein'}>Verein</NavLi>
-      <NavLi href="/aktuelles" active={$page.url.pathname==='/aktuelles'}>Aktuelles</NavLi>
-      <NavLi href="/spiele" active={$page.url.pathname==='/spiele'}>Spiele</NavLi>
+      <NavLi href="/" active={$page.url.pathname === "/"}>Startseite</NavLi>
+      <NavLi href="/verein" active={$page.url.pathname === "/verein"}
+        >Verein</NavLi
+      >
+      <NavLi href="/aktuelles" active={$page.url.pathname === "/aktuelles"}
+        >Aktuelles</NavLi
+      >
+      <NavLi href="/spiele" active={$page.url.pathname === "/spiele"}
+        >Spiele</NavLi
+      >
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
       <MegaMenu full items={menu2} let:item>
         <a
@@ -54,8 +68,34 @@
           >
         </a>
       </MegaMenu>
-      <NavLi href="/kontakt" active={$page.url.pathname==='/kontakt'}>Kontakt</NavLi>
+      <NavLi href="/kontakt" active={$page.url.pathname === "/kontakt"}
+        >Kontakt</NavLi
+      >
+      <NavLi href="mailto: abc@example.com">
+        <div class="mail">
+        <i class="mi mi-email" />
+      </div>
+      </NavLi>
+      <NavLi>
+        <div class="insta"> 
+          <a href="https://www.instagram.com/fcsportfreunde/" class="fa fa-instagram"></a>
+        </div>
+      </NavLi>
     </NavUl>
   </Navbar>
 </div>
 
+<style>
+  .mail {
+    height: auto;
+    width: auto;
+  }
+  .mi {
+		font-size: x-large;
+	}
+  .insta {
+    height: auto;
+    width: auto;
+    font-size: x-large;
+  }
+</style>

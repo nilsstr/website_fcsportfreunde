@@ -7,11 +7,10 @@
         A,
         Heading,
         P,
+        Modal
     } from "flowbite-svelte";
     import Navigationbar from "../../components/navbar/navbar.svelte";
     import Footer from "../../components/footer/footer.svelte";
-
-    import { onMount } from "svelte";
 
     let name = "";
     let vorname = "";
@@ -25,14 +24,33 @@
     let staat = "";
     let letzterVerein = "";
 
+    let showMessage = false;
+
     const handleSubmit = async () => {
-        const response = await fetch("http://127.0.0.1:8000/your-fastapi-backend-endpoint", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ name, vorname, geburtstag, geburtsort, strasse, wohnort, telefon, email, handy, staat, letzterVerein }),
-        });
+        showMessage = true;
+
+        const response = await fetch(
+            "http://127.0.0.1:8000/your-fastapi-backend-endpoint",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name,
+                    vorname,
+                    geburtstag,
+                    geburtsort,
+                    strasse,
+                    wohnort,
+                    telefon,
+                    email,
+                    handy,
+                    staat,
+                    letzterVerein,
+                }),
+            }
+        );
 
         // Handle the response from the backend as per your requirements
         const data = await response.json();
@@ -183,6 +201,10 @@
                 >
             </div>
             <Button type="submit">Absenden</Button>
+            <Modal bind:open={showMessage} autoclose>
+                <p class="text-base leading-relaxed text-gray-700 dark:text-gray-400">
+                  Ihr Antrag wurde erfolgreich abgesendet!
+              </Modal>
         </form>
     </div>
 </main>
