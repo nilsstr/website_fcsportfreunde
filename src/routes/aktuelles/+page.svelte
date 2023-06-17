@@ -1,7 +1,9 @@
 <script>
-    import { Heading, P } from "flowbite-svelte";
+    import { Heading} from "flowbite-svelte";
     import Navigationbar from "../../components/navbar/navbar.svelte";
     import Footer from "../../components/footer/footer.svelte";
+    import Beitrag_1 from "../blog/1_beitrag/+page.md";
+    import Beitrag_2 from "../blog/2_beitrag/+page.md";
 </script>
 
 <main>
@@ -10,18 +12,8 @@
         <Heading tag="h2" customSize="text-4xl font-extrabold "
             >Aktuelles vom FC Sportfreunde</Heading
         >
-
-        <P class="my-4 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-            cursus sit amet dictum sit. Quis enim lobortis scelerisque fermentum
-            dui faucibus in. Mattis vulputate enim nulla aliquet porttitor lacus
-            luctus accumsan. Ipsum dolor sit amet consectetur adipiscing elit.
-            Euismod nisi porta lorem mollis aliquam ut porttitor. Tortor
-            consequat id porta nibh. Tortor condimentum lacinia quis vel eros
-            donec ac odio. Elementum sagittis vitae et leo duis ut diam quam
-            nulla. Vel turpis nunc eget lorem.
-        </P>
+        <Beitrag_2></Beitrag_2>
+        <Beitrag_1></Beitrag_1>
     </div>
 </main>
 <Footer />
