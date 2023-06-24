@@ -8,7 +8,6 @@
     let headingClass = "mb-4 text-white";
 </script>
 
-<Balls></Balls>
 <main>
     <Navigationbar />
     <div class="landing">
