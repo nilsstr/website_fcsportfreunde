@@ -57,6 +57,7 @@
       <NavLi href="{base}/spiele" active={$page.url.pathname === base+"/spiele"}
         >Spiele</NavLi
       >
+      <!--
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
       <MegaMenu full items={menu2} let:item>
         <a
@@ -69,6 +70,7 @@
           >
         </a>
       </MegaMenu>
+      -->
       <NavLi href="{base}/kontakt" active={$page.url.pathname === base+"/kontakt"}
         >Kontakt</NavLi
       >
