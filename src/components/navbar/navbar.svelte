@@ -10,6 +10,7 @@
   } from "flowbite-svelte";
   import logo from "$lib/fcs.png";
   import { page } from "$app/stores";
+  import { base } from '$app/paths';
 
   let menu2 = [
     {
@@ -46,14 +47,14 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
-      <NavLi href="/" active={$page.url.pathname === "/"}>Startseite</NavLi>
-      <NavLi href="/verein" active={$page.url.pathname === "/verein"}
+      <NavLi href="{base}/" active={$page.url.pathname === base+"/"}>Startseite</NavLi>
+      <NavLi href="{base}/verein" active={$page.url.pathname === base+"/verein"}
         >Verein</NavLi
       >
-      <NavLi href="/aktuelles" active={$page.url.pathname === "/aktuelles"}
+      <NavLi href="{base}/aktuelles" active={$page.url.pathname === base+"/aktuelles"}
         >Aktuelles</NavLi
       >
-      <NavLi href="/spiele" active={$page.url.pathname === "/spiele"}
+      <NavLi href="{base}/spiele" active={$page.url.pathname === base+"/spiele"}
         >Spiele</NavLi
       >
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
@@ -68,7 +69,7 @@
           >
         </a>
       </MegaMenu>
-      <NavLi href="/kontakt" active={$page.url.pathname === "/kontakt"}
+      <NavLi href="{base}/kontakt" active={$page.url.pathname === base+"/kontakt"}
         >Kontakt</NavLi
       >
       <NavLi href="mailto: abc@example.com">
