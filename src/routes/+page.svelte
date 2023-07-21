@@ -3,7 +3,6 @@
     import { Heading, Button } from "flowbite-svelte";
     import Footer from "../components/footer/footer.svelte";
     import Soccerball from "$lib/soccer_ball.png";
-    import Balls from "../components/ball/ball.svelte";
 
     let headingClass = "mb-4 text-white";
 </script>
