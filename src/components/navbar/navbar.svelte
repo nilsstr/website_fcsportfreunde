@@ -38,7 +38,7 @@
     let:hidden
     let:toggle
   >
-    <NavBrand href="/">
+    <NavBrand href="{base}/">
       <img src={logo} class="mr-3 h-6 sm:h-9" alt="fcs Logo" />
       <span
         class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
@@ -60,7 +60,7 @@
       <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
       <MegaMenu full items={menu2} let:item>
         <a
-          href="/"
+          href="{base}/"
           class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 h-full"
         >
           <div class="font-semibold dark:text-white">{item.name}</div>

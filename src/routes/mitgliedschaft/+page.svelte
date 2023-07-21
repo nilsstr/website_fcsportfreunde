@@ -11,6 +11,7 @@
     } from "flowbite-svelte";
     import Navigationbar from "../../components/navbar/navbar.svelte";
     import Footer from "../../components/footer/footer.svelte";
+    import { base } from '$app/paths';
 
     let name = "";
     let vorname = "";
@@ -184,7 +185,7 @@
                     Bildveröffentlichung des Mitgliedes auf der Internetseite
                     des
                     <A
-                        href="/"
+                        href="{base}/"
                         class="text-primary-700 dark:text-primary-700 hover:underline"
                         >FC Sportfreunde Münchens
                     </A>, in Vereinszeitungen und im Vereinsheim wird
@@ -194,7 +195,7 @@
             <div class="checkbox">
                 <Checkbox class="mb-6 space-x-1" required
                     >Ich habe die<A
-                        href="/"
+                        href="{base}/"
                         class="text-primary-700 dark:text-primary-700 hover:underline"
                         >Satzung des FC Sportfreunde Münchens
                     </A>&nbsp;gelesen und akzeptiere diese.</Checkbox

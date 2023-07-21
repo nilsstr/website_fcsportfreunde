@@ -3,6 +3,7 @@
     import { Heading, Button } from "flowbite-svelte";
     import Footer from "../components/footer/footer.svelte";
     import Soccerball from "$lib/soccer_ball.png";
+    import { base } from "$app/paths";
 
     let headingClass = "mb-4 text-white";
 </script>
@@ -20,7 +21,7 @@
                     Willkommen beim FC Sportfreunde München!
                 </Heading>
                 <div class= "button-mitglied">
-                    <Button color="light" href="/mitgliedschaft">
+                    <Button color="light" href="{base}/mitgliedschaft">
                         Jetzt Mitglied werden<svg
                             aria-hidden="true"
                             class="ml-2 -mr-1 w-5 h-5"
