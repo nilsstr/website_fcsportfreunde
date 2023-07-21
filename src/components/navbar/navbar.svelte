@@ -47,14 +47,14 @@
     </NavBrand>
     <NavHamburger on:click={toggle} />
     <NavUl {hidden}>
-      <NavLi href="{base}/" active={$page.url.pathname === base+"/"}>Startseite</NavLi>
+      <NavLi href="{base}/" active={$page.url.pathname === "/"}>Startseite</NavLi>
       <NavLi href="{base}/verein" active={$page.url.pathname === base+"/verein"}
         >Verein</NavLi
       >
-      <NavLi href="{base}/aktuelles" active={$page.url.pathname === base+"/aktuelles"}
+      <NavLi href="{base}/aktuelles" active={$page.url.pathname === "/aktuelles"}
         >Aktuelles</NavLi
       >
-      <NavLi href="{base}/spiele" active={$page.url.pathname === base+"/spiele"}
+      <NavLi href="{base}/spiele" active={$page.url.pathname === "/spiele"}
         >Spiele</NavLi
       >
       <!--
@@ -71,7 +71,7 @@
         </a>
       </MegaMenu>
       -->
-      <NavLi href="{base}/kontakt" active={$page.url.pathname === base+"/kontakt"}
+      <NavLi href="{base}/kontakt" active={$page.url.pathname === "/kontakt"}
         >Kontakt</NavLi
       >
       <NavLi href="mailto: abc@example.com">
