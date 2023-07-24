@@ -51,11 +51,9 @@
       <NavLi href="{base}/verein" active={$page.url.pathname === base+"/verein"}
         >Verein</NavLi
       >
-      <!--
       <NavLi href="{base}/aktuelles" active={$page.url.pathname === "/aktuelles"}
         >Aktuelles</NavLi
       >
-      -->
       <NavLi href="{base}/spiele" active={$page.url.pathname === "/spiele"}
         >Spiele</NavLi
       >
