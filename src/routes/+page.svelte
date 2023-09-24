@@ -20,7 +20,7 @@
                 >
                     Willkommen beim FC Sportfreunde München!
                 </Heading>
-                <!--
+
                 <div class= "button-mitglied">
                     <Button color="light" href="{base}/mitgliedschaft">
                         Jetzt Mitglied werden<svg
@@ -37,7 +37,7 @@
                         >
                     </Button>
                 </div>
-                -->
+
             </div>
 
             <div class="container-ball">
