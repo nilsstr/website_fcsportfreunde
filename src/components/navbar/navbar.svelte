@@ -4,9 +4,7 @@
     NavBrand,
     NavLi,
     NavUl,
-    NavHamburger,
-    Chevron,
-    MegaMenu,
+    NavHamburger
   } from "flowbite-svelte";
   import logo from "$lib/fcs.png";
   import { page } from "$app/stores";
@@ -34,7 +32,7 @@
 
 <div class="relative px-8">
   <Navbar
-    navClass="px-2 sm:px-4 py-2.5 absolute w-full z-20 top-0 left-0 border-b"
+    navClass="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"
     let:hidden
     let:toggle
   >

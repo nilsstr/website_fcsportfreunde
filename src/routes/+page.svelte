@@ -74,6 +74,7 @@
     .container-ball {
         align-items: right;
         width: 100%;
+        display: flex;
     }
     .button-mitglied {
         margin-top: 40px;
