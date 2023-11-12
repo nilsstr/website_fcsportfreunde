@@ -41,7 +41,7 @@
     .heading {
         width: 80%;
         margin-top: 25%;
-        margin-left: 20px;
+        margin-left: 50px;
     }
 
     .button-mitglied {
