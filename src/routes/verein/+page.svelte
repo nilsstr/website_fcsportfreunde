@@ -25,7 +25,7 @@
             image: avatar,
             title: "Schriftführer",
             description: "Raffaele Denami",
-        }
+        },
         // Add more card objects here if needed
         // Add more card objects here if needed
     ];
@@ -38,7 +38,7 @@
         {
             image: avatar,
             description: "Amir Seferovic",
-        }
+        },
     ];
 </script>
 
@@ -52,65 +52,64 @@
                 >
             </div>
             <div class="grid gap-6 mb-6 md:grid-cols-2">
-            {#each VorstandData as card}
-                <div class="card-margin">
-                    <Card
-                        {card}
-                        horizontal
-                        img={card.image}
-                        style="width: auto; height: auto;"
-                    >
-                        <!-- svelte-ignore a11y-img-redundant-alt -->
-                        <h5
-                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                {#each VorstandData as card}
+                    <div class="card-margin">
+                        <Card
+                            {card}
+                            horizontal
+                            img={card.image}
+                            style="width: auto; height: auto;"
                         >
-                            {card.description}
-                        </h5>
-                        <p
-                            class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
-                        >
-                            {card.title}
-                        </p>
-                    </Card>
-                </div>
-            {/each}
-        </div>
-        <div class="card-container">
-            <div class="heading-title">
-                <Heading tag="h3" customSize="text-3xl font-extrabold "
-                    >Jugendleitung</Heading
-                >
+                            <!-- svelte-ignore a11y-img-redundant-alt -->
+                            <h5
+                                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                            >
+                                {card.description}
+                            </h5>
+                            <p
+                                class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
+                            >
+                                {card.title}
+                            </p>
+                        </Card>
+                    </div>
+                {/each}
             </div>
-            <div class="grid gap-6 mb-6 md:grid-cols-2">
-            {#each teamleitungen as card}
-                <div class="card-margin">
-                    <Card
-                        {card}
-                        horizontal
-                        img={card.image}
-                        style="width: 500px; height: 200px;"
+            <div class="card-container">
+                <div class="heading-title">
+                    <Heading tag="h3" customSize="text-3xl font-extrabold "
+                        >Jugendleitung</Heading
                     >
-                        <!-- svelte-ignore a11y-img-redundant-alt -->
-                        <h5
-                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-                        >
-                            {card.description}
-                        </h5>
-                    </Card>
                 </div>
-            {/each}
+                <div class="grid gap-6 mb-6 md:grid-cols-2">
+                    {#each teamleitungen as card}
+                        <div class="card-margin">
+                            <Card
+                                {card}
+                                horizontal
+                                img={card.image}
+                                style="width: 500px; height: 200px;"
+                            >
+                                <!-- svelte-ignore a11y-img-redundant-alt -->
+                                <h5
+                                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                                >
+                                    {card.description}
+                                </h5>
+                            </Card>
+                        </div>
+                    {/each}
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
 </main>
-<Footer/>
-
+<Footer />
 
 <style>
     .home {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .card-container {
@@ -118,10 +117,6 @@
     }
     .card-margin {
         margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .footer {
-        position: absolute;
-        bottom: 0;
+
     }
 </style>
