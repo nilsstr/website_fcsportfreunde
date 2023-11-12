@@ -74,7 +74,7 @@
       <NavLi href="{base}/kontakt" active={$page.url.pathname === "/kontakt"}
         >Kontakt</NavLi
       >
-      <NavLi href="mailto: abc@example.com">
+      <NavLi href="mailto: info@fcsportfreunde.de">
         <div class="mail">
         <i class="mi mi-email" />
       </div>
