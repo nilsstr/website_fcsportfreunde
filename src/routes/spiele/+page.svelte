@@ -37,7 +37,7 @@
   <Navigationbar />
   <div class="header">
     <Heading tag="h2" customSize="text-4xl font-extrabold"
-      >Tabellenübersicht</Heading
+      >Aktuelle Spiele</Heading
     >
     <div id={config.bfv_id} class="spiel-tabelle">Laden...</div>
     <Footer />
