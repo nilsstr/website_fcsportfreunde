@@ -33,24 +33,19 @@
   });
 </script>
 
-<main>
+<body>
   <Navigationbar />
   <div class="header">
-    <Heading tag="h2" customSize="text-4xl font-extrabold "
+    <Heading tag="h2" customSize="text-4xl font-extrabold"
       >Tabellenübersicht</Heading
     >
     <div id={config.bfv_id} class="spiel-tabelle">Laden...</div>
+    <Footer />
   </div>
-  
-</main>
-<Footer />
+</body>
+
 
 <style>
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
   .navbar {
     order: 1;
   }
@@ -62,13 +57,14 @@
   .header {
     order: 2;
     margin-top: 100px;
-    width: 80%; /* Adjust the width value as needed */
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    display: grid;
+
+    text-align: center;
+    display: list-item;
   }
   .spiel-tabelle{
-    margin-top: 20px;
+    margin-top: 2%;
+  width:100%;
+  display: flex;
+  justify-content: center;
   }
 </style>

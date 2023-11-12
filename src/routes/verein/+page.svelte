@@ -102,7 +102,8 @@
         </div>
         </div>
 </main>
-<Footer />
+<Footer/>
+
 
 <style>
     .home {
@@ -118,5 +119,9 @@
     .card-margin {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
     }
 </style>

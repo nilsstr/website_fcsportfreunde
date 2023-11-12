@@ -87,9 +87,8 @@
         </P>
     </div>
 </main>
-<div>
     <Footer />
-</div>
+
 
 <style>
     main {
@@ -108,8 +107,7 @@
     .header {
         order: 2;
         margin-top: 100px;
-        width: 50%; /* Adjust the width value as needed */
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 </style>
