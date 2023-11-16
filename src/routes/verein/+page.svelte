@@ -37,7 +37,7 @@
             image: avatar,
             title: "Technischer Leiter",
             description: "Joseph Wodak",
-            email: "a.seferovic@fcsportfreunde.de"
+            email: "j.wodak@fcsportfreunde.de"
         },
         // Add more card objects here if needed
         // Add more card objects here if needed
