@@ -41,7 +41,6 @@
   <Navigationbar />
   <div class="header">
     <Heading tag="h2" customSize="text-4xl font-extrabold">Jugend</Heading>
-    <div id={config.bfv_id} class="spiel-tabelle">Laden...</div>
     <Footer />
   </div>
 </body>
