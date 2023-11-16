@@ -74,7 +74,9 @@
           >
         </a>
       </MegaMenu>
-
+      <NavLi href="{base}/jugend" active={$page.url.pathname === "/jugend"}
+        >Jugend</NavLi
+      >
       <NavLi href="{base}/impressum" active={$page.url.pathname === "/impressum"}
         >Impressum</NavLi
       >
