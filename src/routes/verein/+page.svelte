@@ -4,27 +4,40 @@
     import Footer from "../../components/footer/footer.svelte";
     import herlin from "$lib/herlin.png";
     import avatar from "$lib/avatar.png";
+    import avatar_w from "$lib/avatar_w.png";
+    import { A } from 'flowbite-svelte';
+
     // Array of card data
     let VorstandData = [
         {
             image: herlin,
             title: "1. Vorstand",
             description: "Herrlin Markja",
+            email: "h.markja@fcsportfreunde.de"
         },
         {
             image: avatar,
             title: "2. Vorstand",
             description: "Herbert Schiller",
+            email: "h.schiller@fcsportfreunde.de"
         },
         {
             image: avatar,
             title: "Hauptkassier",
             description: "Manuel Langner",
+            email: "m.langner@fcsportfreunde.de"
         },
         {
             image: avatar,
             title: "Schriftführer",
             description: "Raffaele Denami",
+            email: "r.denami@fcsportfreunde.de"
+        },
+        {
+            image: avatar,
+            title: "Technischer Leiter",
+            description: "Joseph Wodak",
+            email: "a.seferovic@fcsportfreunde.de"
         },
         // Add more card objects here if needed
         // Add more card objects here if needed
@@ -32,12 +45,14 @@
 
     let teamleitungen = [
         {
-            image: avatar,
+            image: avatar_w,
             description: "Christiane Heger",
+            email: "c.heger@fcsportfreunde.de"
         },
         {
             image: avatar,
             description: "Amir Seferovic",
+            email: "a.seferovic@fcsportfreunde.de"
         },
     ];
 </script>
@@ -71,6 +86,7 @@
                             >
                                 {card.title}
                             </p>
+                            <A class="font-medium hover:underline">{card.email}</A>
                         </Card>
                     </div>
                 {/each}
@@ -96,6 +112,7 @@
                                 >
                                     {card.description}
                                 </h5>
+                                <A class="font-medium hover:underline">{card.email}</A>
                             </Card>
                         </div>
                     {/each}

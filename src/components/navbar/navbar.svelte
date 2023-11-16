@@ -4,7 +4,9 @@
     NavBrand,
     NavLi,
     NavUl,
-    NavHamburger
+    NavHamburger,
+    MegaMenu,
+    Chevron
   } from "flowbite-svelte";
   import logo from "$lib/fcs.png";
   import { page } from "$app/stores";
@@ -13,11 +15,13 @@
   let menu2 = [
     {
       name: "Herren",
-      help: "Trainer: Max Mustermann",
+      help: "Trainer: Michal Timko",
+      href: "herren",
     },
     {
       name: "Herren II",
-      help: "Trainer: Max Mustermann",
+      help: "Trainer: Niklas Bellino",
+      href: "herren2",
     },
   ];
 </script>
@@ -32,7 +36,7 @@
 
 <div class="relative px-8">
   <Navbar
-    navClass="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b"
+    navClass="px-2 sm:px-2 py-2.5 fixed w-full z-20 top-0 left-0 border-b"
     let:hidden
     let:toggle
   >
@@ -57,11 +61,11 @@
       <NavLi href="{base}/spiele" active={$page.url.pathname === "/spiele"}
         >Spiele</NavLi
       >
-      <!--
-      <NavLi class="cursor-pointer"><Chevron aligned>Teams</Chevron></NavLi>
+
+      <NavLi class="cursor-pointer"><Chevron aligned>Herren</Chevron></NavLi>
       <MegaMenu full items={menu2} let:item>
         <a
-          href="{base}/"
+          href="{base}/{item.href}"
           class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 h-full"
         >
           <div class="font-semibold dark:text-white">{item.name}</div>
@@ -70,9 +74,9 @@
           >
         </a>
       </MegaMenu>
-      -->
-      <NavLi href="{base}/kontakt" active={$page.url.pathname === "/kontakt"}
-        >Kontakt</NavLi
+
+      <NavLi href="{base}/impressum" active={$page.url.pathname === "/impressum"}
+        >Impressum</NavLi
       >
       <NavLi href="mailto: info@fcsportfreunde.de">
         <div class="mail">
