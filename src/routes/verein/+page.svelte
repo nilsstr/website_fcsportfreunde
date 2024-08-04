@@ -48,12 +48,7 @@
             image: avatar_w,
             description: "Christiane Heger",
             email: "c.heger@fcsportfreunde.de"
-        },
-        {
-            image: avatar,
-            description: "Amir Seferovic",
-            email: "a.seferovic@fcsportfreunde.de"
-        },
+        }
     ];
 </script>
 
