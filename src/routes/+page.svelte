@@ -2,6 +2,7 @@
     import Navigationbar from "../components/navbar/navbar.svelte";
     import { Heading, Button } from "flowbite-svelte";
     import Footer from "../components/footer/footer.svelte";
+    import logo from "$lib/fcs_weiss.png";
 
     let headingClass = "mb-4 text-white";
 </script>
@@ -10,9 +11,10 @@
     <Navigationbar />
     <div class="landing">
         <div class="red-box">
+            <img src={logo} alt="FC Sportfreunde Logo" class="logo" />
             <div class="heading">
                 <Heading
-                    tag="h1"
+                    tag="h2"
                     class={headingClass}
                     customSize="text-4xl font-extrabold md:text-4xl lg:text-7xl"
                 >
@@ -43,6 +45,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        width: 100px; /* Adjust size as needed */
+        height: auto;
     }
 
     .heading {
@@ -54,11 +65,10 @@
     /* Rotating banner styles */
     .banner-container {
         overflow: hidden;
-        width: 100%;
-        max-width: 500px;
+        width: 50%; /* Adjusted width */
         height: 40px;
         position: relative;
-        background: rgba(0, 0, 0, 0.5);
+        background: white;
         border-radius: 10px;
         display: flex;
         align-items: center;
@@ -76,15 +86,25 @@
         padding: 0 30px;
         font-size: 1.2rem;
         font-weight: bold;
-        color: white;
+        color: black;
     }
 
     @keyframes slideBanner {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
     }
 
     .button-mitglied {
-        margin-top: 40px;
+        position: absolute;
+        top: 110px;
+        right: 20px;
+        width: 300px;
+        /* height: auto; */
+        transform: rotate(25deg);
+        transition: transform 0.5sease-in-out;
     }
 </style>
