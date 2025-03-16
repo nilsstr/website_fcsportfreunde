@@ -56,14 +56,11 @@
     .download-link {
         display: inline-block;
         margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #1d4ed8;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
+        color: #1d4ed8;
+        text-decoration: underline;
     }
 
     .download-link:hover {
-        background-color: #2563eb;
+        color: #2563eb;
     }
 </style>
