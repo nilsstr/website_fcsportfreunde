@@ -52,8 +52,9 @@
         position: absolute;
         top: 100px;
         right: 20px;
-        width: 100px; /* Adjust size as needed */
+        width: 300px; /* Adjust size as needed */
         height: auto;
+        transform: rotate(30deg); /* Tilt the logo by 10 degrees */
     }
 
     .heading {
@@ -65,7 +66,7 @@
     /* Rotating banner styles */
     .banner-container {
         overflow: hidden;
-        width: 50%; /* Adjusted width */
+        width: 100%; /* Adjusted width to fill container */
         height: 40px;
         position: relative;
         background: white;
@@ -80,6 +81,7 @@
         display: flex;
         white-space: nowrap;
         animation: slideBanner 8s linear infinite;
+        width: 100%; /* Fill the width of the container */
     }
 
     .banner span {

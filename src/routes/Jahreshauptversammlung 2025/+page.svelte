@@ -7,17 +7,14 @@
 <main>
     <Navigationbar />
     <div class="header">
-        <Heading tag="h2" customSize="text-4xl font-extrabold ">Jahreshauptversammlung 2025</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold">Jahreshauptversammlung 2025</Heading>
 
         <P class="my-4 text-gray-500">
             FC Sportfreunde München e.V. <br />
             am Montag, 17. März 2025 Beginn 19:00 Uhr <br/>
             Vereinsheim Säbener Str.59, 81547 München
         </P>
-        <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Tagesordnung</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold">Tagesordnung</Heading>
 
         <P class="my-4 text-gray-500">
             1. Begrüßung und Eröffnung durch den 1.Vorstand<br/>
@@ -33,28 +30,17 @@
             11. Verschiedenes
         </P>
     </div>
-</main>
     <Footer />
-
+</main>
 
 <style>
     main {
         display: flex;
         flex-direction: column;
-    }
-
-    .navbar {
-        order: 1;
-    }
-
-    .footer {
-        order: 3;
+        margin: 0 5%;
     }
 
     .header {
-        order: 2;
         margin-top: 100px;
-        margin-left: 5%;
-        margin-right: 5%;
     }
 </style>
