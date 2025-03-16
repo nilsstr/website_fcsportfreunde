@@ -11,7 +11,7 @@
     let VorstandData = [
         {
             image: herlin,
-            title: "1. Vorstand & Präsi",
+            title: "1. Vorstand",
             description: "Herrlin Markja",
             email: "h.markja@fcsportfreunde.de"
         },
