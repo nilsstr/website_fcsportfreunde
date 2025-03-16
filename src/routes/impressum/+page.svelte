@@ -5,19 +5,16 @@
 </script>
 
 <main>
-    <Navigationbar />
+    <Navigationbar class="navbar" />
     <div class="header">
-        <Heading tag="h2" customSize="text-4xl font-extrabold ">Adresse</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold ">Adresse</Heading>
 
         <P class="my-4 text-gray-500">
             FC Sportfreunde München <br />
             Säbener Straße 59 <br />
             81547 München
         </P>
-        <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Haftung für Inhalte</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold ">Haftung für Inhalte</Heading>
 
         <P class="my-4 text-gray-500">
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für
@@ -34,9 +31,7 @@
             Bei bekannt werden von entsprechenden Rechtsverletzungen werden wir diese
             Inhalte umgehend entfernen.
         </P>
-        <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Haftung für Links</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold ">Haftung für Links</Heading>
 
         <P class="my-4 text-gray-500">
             Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
@@ -51,9 +46,7 @@
             nicht zumutbar. Bei bekannt werden von Rechtsverletzungen werden wir
             derartige Links umgehend entfernen.
         </P>
-        <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Urheberrecht</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold ">Urheberrecht</Heading>
 
         <P class="my-4 text-gray-500">
             Die Betreiber der Seiten sind bemüht, stets die Urheberrechte
@@ -68,9 +61,7 @@
             Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen
             Gebrauch gestattet.
         </P>
-        <Heading tag="h2" customSize="text-4xl font-extrabold "
-            >Datenschutz</Heading
-        >
+        <Heading tag="h2" customSize="text-4xl font-extrabold ">Datenschutz</Heading>
 
         <P class="my-4 text-gray-500">
             Soweit auf unseren Seiten personenbezogene Daten (beispielsweise
@@ -87,8 +78,7 @@
         </P>
     </div>
 </main>
-    <Footer />
-
+<Footer />
 
 <style>
     main {
@@ -97,7 +87,7 @@
     }
 
     .navbar {
-        order: 1;
+        margin-bottom: 20px; /* Adjust this value as needed */
     }
 
     .footer {

@@ -47,6 +47,7 @@
     .content {
         flex: 1;
         margin: 0 5%;
+        padding-top: 20px; /* Add padding to the top */
     }
 
     .header {

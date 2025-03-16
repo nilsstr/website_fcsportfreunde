@@ -11,7 +11,7 @@
     let VorstandData = [
         {
             image: herlin,
-            title: "1. Vorstand",
+            title: "1. Vorstand & Präsi",
             description: "Herrlin Markja",
             email: "h.markja@fcsportfreunde.de"
         },
@@ -122,6 +122,7 @@
     .home {
         display: flex;
         justify-content: center;
+        margin-top: 20px; /* Add margin to create space from the Navigationbar */
     }
 
     .card-container {
@@ -129,6 +130,5 @@
     }
     .card-margin {
         margin-top: 20px;
-
     }
 </style>
