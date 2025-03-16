@@ -50,17 +50,17 @@
 
     .logo {
         position: absolute;
-        top: 100px;
-        right: 20px;
-        width: 300px; /* Adjust size as needed */
+        top: 13%;
+        right: 5%;
+        width: 25vw; /* Adjust size relative to viewport width */
         height: auto;
-        transform: rotate(30deg); /* Tilt the logo by 10 degrees */
+        transform: rotate(30deg); /* Tilt the logo by 30 degrees */
     }
 
     .heading {
         width: 80%;
         margin-top: 25%;
-        margin-left: 50px;
+        margin-left: 20px;
     }
 
     /* Rotating banner styles */

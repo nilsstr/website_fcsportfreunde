@@ -123,10 +123,13 @@
         display: flex;
         justify-content: center;
         margin-top: 20px; /* Add margin to create space from the Navigationbar */
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .card-container {
         margin-top: 100px;
+        width: auto;
     }
     .card-margin {
         margin-top: 20px;

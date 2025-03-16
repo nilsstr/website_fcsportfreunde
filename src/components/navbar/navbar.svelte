@@ -43,7 +43,7 @@
     <NavBrand href="{base}/">
       <img src={logo} class="mr-3 h-6 sm:h-" alt="fcs Logo" />
       <span
-        class="self-center whitespace-nowrap text-l font-semibold dark:text-white"
+        class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
         >FC Sportfreunde München e.V.</span
       >
     </NavBrand>
