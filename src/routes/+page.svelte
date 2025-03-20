@@ -21,12 +21,6 @@
                     Willkommen beim FC Sportfreunde München!
                 </Heading>
                 <!-- Rotating banner added here -->
-                <div class="banner-container">
-                    <div class="banner">
-                        <span>Jahreshauptversammlung 2025: Kommt vorbei!</span>
-                        <span>Liebe Grüße, euer Präsi.</span>
-                    </div>
-                </div>
             </div>
             <div style="width: 40%" />
         </div>
