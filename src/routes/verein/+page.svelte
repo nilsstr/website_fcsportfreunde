@@ -10,10 +10,10 @@
     // Array of card data
     let VorstandData = [
         {
-            image: herlin,
+            image: avatar,
             title: "1. Vorstand",
-            description: "Herrlin Markja",
-            email: "h.markja@fcsportfreunde.de"
+            description: "Urim Kokaj",
+            email: "u.kokaj@fcsportfreunde.de"
         },
         {
             image: avatar,
