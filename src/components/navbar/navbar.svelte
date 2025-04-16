@@ -74,9 +74,6 @@
           >
         </a>
       </MegaMenu>
-      <NavLi href="{base}/Jahreshauptversammlung 2025" active={$page.url.pathname === "/Jahreshauptversammlung 2025"}
-        >Jahreshauptversammlung 2025</NavLi
-      >
       <NavLi href="{base}/impressum" active={$page.url.pathname === "/impressum"}
         >Impressum</NavLi
       >
