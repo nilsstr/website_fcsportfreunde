@@ -46,8 +46,8 @@
     let teamleitungen = [
         {
             image: avatar_w,
-            description: "Christiane Heger",
-            email: "c.heger@fcsportfreunde.de"
+            description: "Jugendleitung",
+            email: "jugend@fcsportfreunde.de"
         }
     ];
 </script>
