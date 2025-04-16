@@ -45,7 +45,7 @@
 
     let teamleitungen = [
         {
-            image: avatar_w,
+            image: avatar,
             description: "Jugendleitung",
             email: "jugend@fcsportfreunde.de"
         }
